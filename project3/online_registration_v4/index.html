@@ -25,20 +25,38 @@
           <label> City<br />
           <input type="text" name="city"/> </label><br />
 
-          <label>state</label>
-          <select name="state"> State<br />
+          <label>state</label><br />
+          <select name="state">
             <option value="italy">Italy</option>
             <option value="usa">USA</option>
             <option value="uk">UK</option>
             <option value="france">France</option>
             <option value="australia">Australia</option>
-          </select>
-
-
+          </select><br />
 
           <label> Zip Code<br />
           <input type="text" name="zipcode"/> </label><br />
         </fieldset>
+
+        <fieldset>
+          <legend> Nesletter</legend>
+          <label>select the newsletters you would like to receive<br />
+          <input type="checkbox" name="newsletters" value="html"/>HTML News <br />
+          <input type="checkbox" name="newsletters" value="css"/>CSS News <br />
+          <input type="checkbox" name="newsletters" value="javascript"/> Javascript News<br />
+          </label>
+
+          <label>Newsletter format<br />
+          <input type="radio" name="format" value="html"/> HTML<br />
+          <input type="radio" name="format" value="text"/>Plain text<br />
+          </label>
+
+          <label> Other topics you'd like to hear about<br />
+            <textarea name="comments" cols="20" rows="10"> enter yout comments...</textarea>
+        </fieldset>
+        <input type="submit" name="subscribe" value="subscribe"/>
+
+        <p>copyright the code review</p>
       </form>
     </header>
 
