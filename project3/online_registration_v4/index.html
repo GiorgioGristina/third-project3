@@ -15,19 +15,19 @@
       <form>
         <fieldset>
           <legend> contact information</legend>
-          <label> Full Name<br />
-          <input type="text" name="name"/> </label><br />
-          <label> Email Address<br />
-          <input type="email" name="email"/> </label><br />
-          <label> Phone Number<br />
-          <input type="text" name="phonenumber"/> </label><br />
-          <label> Street Address<br />
-          <input type="text" name="address"/> </label><br />
-          <label> City<br />
-          <input type="text" name="city"/> </label><br />
+          <label for="name"> Full Name<br />
+          <input id="name"type="text" name="name" placeholder="required"/> </label><br />
+          <label for="email"> Email Address<br />
+          <input id="email" type="email" name="email" placeholder="required"/> </label><br />
+          <label for="number"> Phone Number<br />
+          <input id="number"type="text" name="phonenumber"/> </label><br />
+          <label for="address"> Street Address<br />
+          <input id="address" type="text" name="address"/> </label><br />
+          <label for="city"> City<br />
+          <input id="city" type="text" name="city"/> </label><br />
 
-          <label>state</label><br />
-          <select name="state">
+          <label for="state">state</label><br />
+          <select id="state" name="state">
             <option value="italy">Italy</option>
             <option value="usa">USA</option>
             <option value="uk">UK</option>
@@ -36,26 +36,27 @@
           </select><br />
 
           <label> Zip Code<br />
-          <input type="text" name="zipcode"/> </label><br />
+          <input id="zipcode" type="text" name="zipcode"/> </label><br />
         </fieldset>
 
         <fieldset>
           <legend> Nesletter</legend>
-          <label>select the newsletters you would like to receive<br />
-          <input type="checkbox" name="newsletters" value="html"/>HTML News <br />
-          <input type="checkbox" name="newsletters" value="css"/>CSS News <br />
-          <input type="checkbox" name="newsletters" value="javascript"/> Javascript News<br />
-          </label>
+          <label>select the newsletters you would like to receive</label><br />
+          <label for="html"><input id="html" type="checkbox" name="newsletters" value="html"/>HTML News</label> <br />
+          <label for="css"><input id="css" type="checkbox" name="newsletters" value="css"/>CSS News</label> <br />
+          <label for="java"><input  id="java"type="checkbox" name="newsletters" value="javascript"/> Javascript News</label><br />
 
-          <label>Newsletter format<br />
-          <input type="radio" name="format" value="html"/> HTML<br />
-          <input type="radio" name="format" value="text"/>Plain text<br />
-          </label>
+
+          <label>Newsletter format</label><br />
+          <label for="ht"><input id="ht" type="radio" name="format" value="html"/> HTML</label><br />
+          <label for="plain"><input id="plain"type="radio" name="format" value="text"/>Plain text</label><br />
+
 
           <label> Other topics you'd like to hear about<br />
             <textarea name="comments" cols="20" rows="10"> enter yout comments...</textarea>
+          <input type="submit" name="sign up" value="sign up"/>
         </fieldset>
-        <input type="submit" name="sign up" value="sign up"/>
+
 
         <p>copyright the code review</p>
       </form>
