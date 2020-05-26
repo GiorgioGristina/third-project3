@@ -3,58 +3,64 @@
   <head>
     <title>newsletter </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" type="text/css">
   </head>
   <body>
-    <header>
+    <header class="container">
       <h1>the code review</h1>
       <h2>signu for our newsletter</h2>
       <p>get the latest news on how your code is doing right in your inbox</p>
     </header>
       <form>
-        <fieldset>
-          <legend> contact information</legend>
-          <label for="name"> Full Name<br />
-          <input id="name"type="text" name="name" placeholder="required"/> </label><br />
-          <label for="email"> Email Address<br />
-          <input id="email" type="email" name="email" placeholder="required"/> </label><br />
-          <label for="number"> Phone Number<br />
-          <input id="number"type="text" name="phonenumber"/> </label><br />
-          <label for="address"> Street Address<br />
-          <input id="address" type="text" name="address"/> </label><br />
-          <label for="city"> City<br />
-          <input id="city" type="text" name="city"/> </label><br />
+        <fieldset class="container">
+          <div>
+            <legend> contact information</legend>
+            <label for="name"> Full Name</label><br />
+            <input id="name"type="text" name="name" placeholder="required"/> <br />
+            <label for="email"> Email Address</label><br />
+            <input id="email" type="email" name="email" placeholder="required"/> <br />
+            <label for="number"> Phone Number</label><br />
+            <input id="number"type="text" name="phonenumber"/> <br />
+            <label for="address"> Street Address</label><br />
+            <input id="address" type="text" name="address"/> <br />
+            <label for="city"> City</label><br />
+            <input id="city" type="text" name="city"/> <br />
 
-          <label for="state">state</label><br />
-          <select id="state" name="state">
-            <option value="italy">Italy</option>
-            <option value="usa">USA</option>
-            <option value="uk">UK</option>
-            <option value="france">France</option>
-            <option value="australia">Australia</option>
-          </select><br />
+            <label for="state">state</label><br />
+            <select id="state" name="state">
+              <option value="italy">Italy</option>
+              <option value="usa">USA</option>
+              <option value="uk">UK</option>
+              <option value="france">France</option>
+              <option value="australia">Australia</option>
+            </select><br />
 
-          <label> Zip Code<br />
-          <input id="zipcode" type="text" name="zipcode"/> </label><br />
+            <label for="zipcode"> Zip Code </label><br />
+            <input id="zipcode" type="text" name="zipcode"/><br />
+          </div>
         </fieldset>
 
-        <fieldset>
-          <legend> Nesletter</legend>
-          <label>select the newsletters you would like to receive</label><br />
-          <label for="html"><input id="html" type="checkbox" name="newsletters" value="html"/>HTML News</label> <br />
-          <label for="css"><input id="css" type="checkbox" name="newsletters" value="css"/>CSS News</label> <br />
-          <label for="java"><input  id="java"type="checkbox" name="newsletters" value="javascript"/> Javascript News</label><br />
+        <fieldset class="container">
+          <p>
+            <legend> Nesletter</legend>
+            <label>select the newsletters you would like to receive</label><br />
+            <label for="html"><input id="html" type="checkbox" name="newsletters" value="html"/>HTML News</label> <br />
+            <label for="css"><input id="css" type="checkbox" name="newsletters" value="css"/>CSS News</label> <br />
+            <label for="java"><input  id="java"type="checkbox" name="newsletters" value="javascript"/> Javascript News</label><br />
+          </p>
 
+          <p>
+            <label>Newsletter format</label><br />
+            <label for="ht"><input id="ht" type="radio" name="format" value="html"/> HTML</label><br />
+            <label for="plain"><input id="plain"type="radio" name="format" value="text"/>Plain text</label><br />
+          </p>
 
-          <label>Newsletter format</label><br />
-          <label for="ht"><input id="ht" type="radio" name="format" value="html"/> HTML</label><br />
-          <label for="plain"><input id="plain"type="radio" name="format" value="text"/>Plain text</label><br />
-
-
-          <label for="comment"> Other topics you'd like to hear about<br />
-            <textarea id="comment" name="comments" cols="20" rows="10">write here </textarea><br />
-          <input type="submit" name="sign up" value="sign up"/>
+          <p>
+            <label for="comment"> Other topics you'd like to hear about<br />
+              <textarea id="comment" name="comments" cols="20" rows="10">write here </textarea><br />
+            <input type="submit" name="sign up" value="sign up"/>
+          </p>
         </fieldset>
 
 
