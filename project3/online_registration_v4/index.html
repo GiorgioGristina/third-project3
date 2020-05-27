@@ -17,33 +17,29 @@
       </div>
     </header>
       <form class="container">
+        <div class="contact">
           <fieldset>
-            <div class="contact">
-              <div>
-                <legend> contact information</legend>
-              </div>
+            <legend> contact information</legend>
+
               <div>
                 <label for="name"> Full Name</label><br />
-                <input id="name"type="text" name="name" placeholder="required"/> <br />
+                <input id="name" type="text" name="name" placeholder="required"/> <br />
               </div>
               <div>
-                <label for="email"> Email Address</label><br />
-                <input id="email" type="email" name="email" placeholder="required"/> <br />
+                <label for="email"> Email Address</label><br />                  <input id="email" type="email" name="email" placeholder="required"/> <br />
               </div>
               <div>
                 <label for="number"> Phone Number</label><br />
-                <input id="number"type="text" name="phonenumber"/> <br />
+                <input id="number" type="text" name="phonenumber"/> <br />
               </div>
-              <div>
-                <label for="address"> Street Address</label><br />
+              <div>                <label for="address"> Street Address</label><br />
                 <input id="address" type="text" name="address"/> <br />
               </div>
               <div>
                 <label for="city"> City</label><br />
                 <input id="city" type="text" name="city"/> <br />
               </div>
-              <div>
-                <label for="state">state</label><br />
+              <div>                  <label for="state">state</label><br />
                 <select id="state" name="state">
                   <option value="italy">Italy</option>
                   <option value="usa">USA</option>
@@ -56,37 +52,37 @@
                 <label for="zipcode"> Zip Code </label><br />
                 <input id="zipcode" type="text" name="zipcode"/><br />
               </div>
-            </div>
-        </fieldset>
 
-
+          </fieldset>
+      </div>
+      <div class="newsletter">
         <fieldset>
-          <div class="newsletter">
-          <div>
-              <legend> Nesletter</legend>
-            </div>
+
+            <legend> Nesletter</legend>
+
             <div>
               <label>select the newsletters you would like to receive</label><br />
               <label for="html"><input id="html" type="checkbox" name="newsletters" value="html"/>HTML News</label> <br />
               <label for="css"><input id="css" type="checkbox" name="newsletters" value="css"/>CSS News</label> <br />
-              <label for="java"><input  id="java"type="checkbox" name="newsletters" value="javascript"/> Javascript News</label><br />
+              <label for="java"><input  id="java" type="checkbox" name="newsletters" value="javascript"/> Javascript News</label><br />
             </div>
 
             <div>
               <label>Newsletter format</label><br />
               <label for="ht"><input id="ht" type="radio" name="format" value="html"/> HTML</label><br />
-              <label for="plain"><input id="plain"type="radio" name="format" value="text"/>Plain text</label><br />
+              <label for="plain"><input id="plain" type="radio" name="format" value="text"/>Plain text</label><br />
             </div>
 
             <div>
-              <label for="comment"> Other topics you'd like to hear about<br />
+              <label for="comment"> Other topics you'd like to hear about</label><br />
                 <textarea id="comment" name="comments" cols="20" rows="10">write here </textarea><br />
             </div>
             <div>
               <input type="submit" name="sign up" value="sign up"/>
             </div>
-          </div>
+
         </fieldset>
+      </div>
       </form>
       <footer>
         <p>copyright the code review</p>
