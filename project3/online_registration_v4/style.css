@@ -1,6 +1,11 @@
 /*===========================
        basic stile
 ==========================*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 h1{
   background-color: black;
@@ -44,15 +49,3 @@ input[type="submit"]{
 /*========================================
     layout web site
 ========================================*/
-
-.container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-div,
-p{
-  display: flex;
-}
