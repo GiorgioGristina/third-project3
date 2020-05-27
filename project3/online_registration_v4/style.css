@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+body{
+  font-family: 0.5em;
+}
+
 h1{
   background-color: black;
   color: white;
@@ -32,7 +36,7 @@ label{
 }
 
 .container{
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 input,
@@ -69,6 +73,7 @@ input[type="submit"]{
 .container{
   width: 100%;
   margin: auto;
+  flex-grow: 1;
 }
 
 h1{
