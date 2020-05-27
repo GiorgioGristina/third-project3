@@ -51,3 +51,8 @@ input[type="submit"]{
   align-items: center;
   flex-wrap: wrap;
 }
+
+div,
+p{
+  display: flex;
+}
