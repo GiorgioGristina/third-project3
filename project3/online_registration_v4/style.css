@@ -11,6 +11,65 @@ body{
   font-family: Merriweather ;
 }
 
+/* modifie */
+
+.contact,
+.newsletter{
+  padding: 50px 50px 35px 50px;
+}
+.newsletter,
+.contact,
+.flexform{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label{
+  margin-bottom: 10px;
+}
+
+#zipcode{
+  max-width: 50%;
+}
+
+input[placeholder="required"]{
+  text-align: right;
+  padding: 3px 8px;
+  font-weight: bold;
+}
+
+footer p{
+  text-align: center;
+}
+@media (min-width: 768px){
+
+  body{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .contact .flexform{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact input, select{
+    flex-grow: 1;
+    flex-basis: 75%;
+    margin-bottom: 10px;
+  }
+
+  .contact label{
+    flex-basis: 25%;
+    height: 50px;
+    margin: auto 0;
+}
+
+#zipcode{
+  max-width: 25%;
+
+}
+/* end modifie*/
 h1{
   background-color: black;
   color: white;
@@ -26,8 +85,22 @@ header p{
 
 header{
   border-bottom: 6px solid black;
-  margin-bottom: 4px;
-  text-align: center;
+  margin-bottom: 8px;
+
+}
+
+header,
+.header h1,
+.begin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.begin{
+  margin: 3px auto;
 }
 
 label{
@@ -59,14 +132,8 @@ fieldset{
 
 input[type="submit"]{
   background-color: #00cccc;
-  padding: 3px 6px;
+  padding: 6px 6px;
 }
 /*========================================
     layout web site flex
 ========================================*/
-
-.contact,
-.newsletter{
-  display: flex;
-
-}
