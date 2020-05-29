@@ -9,7 +9,7 @@
 
 body{
   font-family: Merriweather ;
-  width: 95%;
+
 
 }
 
@@ -37,12 +37,11 @@ header{
 
 }
 
-header,
 .header,
 .begin{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  text-align: center;
 
 }
 
@@ -107,12 +106,22 @@ input[type="submit"]{
 
 .header{
   flex-grow: 1;
+
 }
 .contact,
 .newsletter{
   border-top: 0;
+  margin-top: 5px;
 }
 
+legend{
+  font-weight: bold;
+  font-size: 25px;
+  padding: 3px;
+}
+.cont{
+  border-top: 2px solid black;
+}/* border top of contact disapear*/
 
 .contact label{
   margin-bottom: 10px;
