@@ -94,7 +94,7 @@ input[type="submit"]{
 /*========================================
     layout web site flex
 ========================================*/
-/* modifie */
+
 
 .contact,
 .newsletter{
@@ -133,7 +133,7 @@ legend{
 }
 .cont{
   border-top: 2px solid black;
-}/* border top of contact disapear*/
+}
 
 .contact label{
   margin-bottom: 10px;
