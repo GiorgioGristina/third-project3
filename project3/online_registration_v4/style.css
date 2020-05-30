@@ -17,10 +17,19 @@ h1{
   background-color: black;
   color: white;
   flex-grow: 1;
+  height: 60px;
+  padding: 5px;
 
 }
 
+.begin{
+  height: 80px;
+}
 
+.begin h2,
+.begin p{
+  margin: 5px 0;
+}
 
 }
 
@@ -58,6 +67,9 @@ label{
 }
 .container{
   font-size: 1em;
+}
+header{
+  padding:5px;/*bo*/
 }
 
 input,
@@ -131,15 +143,23 @@ legend{
   max-width: 50%;
 }
 
-input[placeholder="required"]{
-  text-align: right;
-  padding: 3px 8px;
-  font-weight: bold;
+input::placeholder {
+    text-align: right;
+    padding: 0 1.5em;
+    font-style: italic;
+    color: #9ca6b0 ;
 }
 
 footer p{
   text-align: center;
 }
+textarea:focus,
+select:focus,
+input[type="text"]:focus{
+  background-color: white;
+  border: black solid 2px;
+}
+
 @media (min-width: 768px){
 
   form,
