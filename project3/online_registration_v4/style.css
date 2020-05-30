@@ -164,7 +164,7 @@ input[type="text"]:focus{
 
   form,
   .begin{
-      width: 80%;
+      width: 60%;
       margin: 0 auto;
     }
 
@@ -189,4 +189,3 @@ input[type="text"]:focus{
   max-width: 25%;
 
 }
-/* end modifie*/
