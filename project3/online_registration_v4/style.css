@@ -3,144 +3,55 @@
 ==========================*/
 *{
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
 }
 
 body{
   font-family: Merriweather ;
-
-
 }
 
-h1{
+/*style top*/
+
+.header{
   background-color: black;
   color: white;
-  flex-grow: 1;
-  height: 60px;
   padding: 5px;
-
+  margin-bottom: 15px;
 }
 
 .begin{
-  height: 80px;
+  margin: 10px 0;
+  border-bottom: black 8px solid;
+  margin-bottom: 5px;
+
 }
 
-.begin h2,
-.begin p{
-  margin: 5px 0;
-}
+header{
 
 }
 
 h2{
   color: black;
-}
-
-header p{
-  color: lightgrey;
-}
-
-header{
-  margin-bottom: 8px;
-
-}
-
-.header,
-.begin{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
-}
-
-.begin{
-  margin: 3px auto;
-}
-
-label{
-    padding: 2px;
-    margin: 1px;
-}
-
-
-}
-.container{
-  font-size: 1em;
-}
-header{
-  padding:5px;/*bo*/
-}
-
-input,
-textarea,
-select{
-  background-color: lightgrey;
-  border: 0;
-  border-radius: 2px;
-
-}
-
-fieldset{
-  border: 0;
-  border-top: 3px solid black;
-
-}
-
-input[type="submit"]{
-  background-color: #00cccc;
-  padding: 6px 6px;
-}
-/*========================================
-    layout web site flex
-========================================*/
-
-
-.contact,
-.newsletter{
-  padding: 20px 20px 10px 20px;
-}
-.newsletter,
-.contact,
-.flexform{
-  display: flex;
-  flex-direction: column;
-}
-
-.begin{
-  border-bottom: 3px solid black;
-  padding: 2px;
+  margin: 5px 0;
+  padding: 5px;
 }
 
 .begin p{
+  margin: 5px 0;
+  color: lightgrey;
+  padding: 5px;
   text-align: center;
 }
 
-.header{
-  flex-grow: 1;
+/* form style*/
 
-}
-.contact,
-.newsletter{
-  border-top: 0;
-  margin-top: 5px;
+
+form label{          /*can not set margin and paddin*/
+  padding: 5px 0;
 }
 
-legend{
-  font-weight: bold;
-  font-size: 25px;
-  padding: 3px;
-}
-.cont{
-  border-top: 2px solid black;
-}
-
-.contact label{
-  margin-bottom: 10px;
-}
-
-#zipcode{
-  max-width: 50%;
+fieldset{
+  border: none;
 }
 
 input::placeholder {
@@ -148,25 +59,102 @@ input::placeholder {
     padding: 0 1.5em;
     font-style: italic;
     color: #9ca6b0 ;
+  }
+
+.cont{
+  border-top: 2px solid black;
+  padding: 15px 0;
+  margin-top: 3px;
+
+}
+
+legend{
+  margin: 20px 0;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.flexform{
+  margin: 10px 0;
+}
+
+input,
+select,
+textarea{
+  background-color: lightgrey;
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+}
+
+input[type="submit"]{
+  background-color: green;
+}
+textarea:focus,
+select:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus{
+  background-color: white;
+  border-radius: 20px;
+  border: 2px black solid;
+
+
+
 }
 
 footer p{
   text-align: center;
 }
-textarea:focus,
-select:focus,
-input[type="text"]:focus{
-  background-color: white;
-  border: black solid 2px;
+/*====================================
+                flex
+======================================*/
+
+/*flex top*/
+
+.header,
+.begin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.begin p,
+h2,
+h1{
+  flex-grow: 1;
 }
 
+/* end flex top */
+
+/* flex form*/
+
+.flexform{
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  width: 90%;
+  margin:0 auto;
+}
+
+#zipcode{
+max-width: 50%;
+}
+/*end flex form*/
+
+
+/*===================================
+   media query
+===================================*/
 @media (min-width: 768px){
 
-  form,
-  .begin{
+  .container{
       width: 60%;
       margin: 0 auto;
     }
+
+    /*flex media query*/
 
   .contact .flexform{
     display: flex;
@@ -180,12 +168,19 @@ input[type="text"]:focus{
   }
 
   .contact label{
-    flex-basis: 25%;
-    height: 50px;
-    margin: auto 0;
-}
+   flex-basis: 25%;
+   height: 50px;
+   margin: auto 0;
+  }
 
-#zipcode{
+  #zipcode{
   max-width: 25%;
+  }
+
+
+
+
+
+
 
 }
