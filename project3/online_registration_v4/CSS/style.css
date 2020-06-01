@@ -1,0 +1,189 @@
+/*===========================
+       basic stile
+==========================*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body{
+  font-family: Merriweather ;
+}
+
+/*style top*/
+
+.header{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.begin{
+  margin: 10px 0;
+  border-bottom: black 8px solid;
+  margin-bottom: 5px;
+
+}
+
+header{
+
+}
+
+h2{
+  color: black;
+  margin: 5px 0;
+  padding: 5px;
+  text-align: center;
+}
+
+.begin p{
+  margin: 5px 0;
+  color: lightgrey;
+  padding: 5px;
+  text-align: center;
+}
+
+/* form style*/
+
+
+form label{          /*can not set margin and paddin*/
+  padding: 5px 0;
+}
+
+fieldset{
+  border: none;
+}
+
+input::placeholder {
+    text-align: right;
+    padding: 0 1.5em;
+    font-style: italic;
+    color: #9ca6b0 ;
+  }
+
+.cont{
+  border-top: 2px solid black;
+  padding: 15px 0;
+  margin-top: 3px;
+
+}
+
+legend{
+  margin: 20px 0;
+  font-weight: bold;
+  padding: 10px 0;
+}
+.flexform{
+  margin: 10px 0;
+}
+
+input,
+select,
+textarea{
+  background-color: lightgrey;
+  border-radius: 20px;
+  padding: 15px;
+  border: none;
+}
+
+input[type="submit"]{
+  background-color: green;
+}
+textarea:focus,
+select:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus{
+  background-color: white;
+  border-radius: 20px;
+  border: 2px black solid;
+  outline: none;
+
+}
+
+footer p{
+  text-align: center;
+}
+/*====================================
+                flex
+======================================*/
+
+/*flex top*/
+
+.header,
+.begin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.begin p,
+h2,
+h1{
+  flex-grow: 1;
+}
+
+/* end flex top */
+
+/* flex form*/
+
+.flexform{
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  width: 100%;
+  margin:0 auto;
+}
+
+#zipcode{
+max-width: 50%;
+}
+/*end flex form*/
+
+
+/*===================================
+   media query
+===================================*/
+@media (min-width: 768px){
+
+  .container{
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    /*flex media query*/
+
+  .contact .flexform{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact input, select{
+    flex-grow: 1;
+    flex-basis: 75%;
+    margin-bottom: 10px;
+  }
+
+  .contact label{
+   flex-basis: 25%;
+   height: 50px;
+   margin: auto 0;
+  }
+
+  #zipcode{
+  max-width: 25%;
+  }
+
+
+
+
+
+
+
+}
